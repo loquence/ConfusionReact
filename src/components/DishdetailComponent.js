@@ -48,11 +48,12 @@ import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
         const dishd = props.dish;
         if(dishd != null) {
             return(
-            <div className="row">
-                <RenderDish dish={props.dish} />
-                <RenderComments comments={props.dish.comments} /> 
-            </div>    
-        
+            <div className="container">
+                <div className="row">
+                    <RenderDish dish={props.dish} />
+                    <RenderComments comments={props.dish.comments} /> 
+                </div>    
+            </div>
             );
         }
         else {
